@@ -76,7 +76,13 @@ nav ul li a:hover{
     transform:scale(2);
     color:rgb(251, 255, 2);
 }
-
+.pointer a{
+    display:inline-flex;
+    text-decoration:none;
+    margin-left:665px;
+    color:rgb(255, 255, 255);
+    font-size:14px;
+}
 .middle{
     position: absolute;
     top:50%;
