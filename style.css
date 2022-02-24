@@ -199,7 +199,7 @@ nav ul li a:hover{
     background:linear-gradient(transparent,rgb(255, 107, 132),yellow,rgb(0, 212, 240),transparent);
 }
 hr{
-    border:1px dashed rgb(161, 161, 161,0.5);
+    border:1px solid white;
 }
 .layout1{
     display:flex;
@@ -369,4 +369,15 @@ form{
 }
 .btn:hover{
     background-color:rgb(159, 255, 130);
+}
+footer{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+}
+footer p{
+    font-size:12px;
+}
+footer span{
+    color:yellow;
 }
