@@ -135,7 +135,7 @@ nav ul li a:hover{
     transform:perspective(600px) rotateY(0deg);
 }
 .back{
-    background:rgba(0, 0, 0);
+    background:rgb(255, 255, 255,0.08);
     border-radius: 7%;
     transform:perspective(600px) rotateY(180deg);
 }
@@ -175,8 +175,8 @@ nav ul li a:hover{
     border-radius: 50%;
 }
 .social a:hover{
-    background: rgb(76, 92, 98);
-    color:rgb(255, 255, 8);
+    background: rgb(255, 242, 129);
+    color:rgb(1, 78, 122);
 }
 .card:hover > .front{
     transform:perspective(600px) rotateY(-180deg);
@@ -345,8 +345,9 @@ hr{
     border-radius: 6%;
 }
 .contact_form p i{
-    color:white;
+    color:rgb(255, 157, 0);
     font-size:25px;
+    border-radius: 50%;
 }
 .contact_form p{
     color:white;
