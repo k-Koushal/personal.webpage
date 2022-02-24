@@ -11,12 +11,23 @@ html {
 body{
     background:black;
 }
+.gotopbtn {
+    position:fixed;
+    width:50px;
+    height:50px;
+    background:rgba(246, 244, 244, 0.5);
+    bottom:5px;
+    right:10px;
+    text-decoration: none;
+    text-align:center;
+    line-height: 50px;
+    color:white;
+}
 section{
     margin:0;
     padding:0;
     height:100vh;
     background:url(bg.jpg);
-}
 }
 .navigation{
     position:relative;
@@ -80,12 +91,10 @@ nav ul li a:hover{
     transform:scale(2);
     color:rgb(251, 255, 2);
 }
-.pointer a{
-    display:inline-flex;
+.pointer {
     text-decoration:none;
-    margin-left:120%;
-    color:rgb(255, 255, 255);
-    font-size:14px;
+    color:rgba(255, 255, 255, 0.5);
+    font-size:17px;
 }
 .middle{
     position: absolute;
@@ -112,12 +121,17 @@ nav ul li a:hover{
 }
 .front img{
     position:center;
-    margin-top:23%;
+    margin-top:15%;
     margin-left:5%;
     width:90%;
-    height: 100;
+    height: auto;
+}
+.front a{
+    margin-left: 50%;
+    
 }
 .front{
+    display:block;
     transform:perspective(600px) rotateY(0deg);
 }
 .back{
@@ -322,15 +336,9 @@ hr{
     color:#bae0ff;
     text-align:center;
 }
-.map h2{
-    margin-top:0%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-    color:white;
-    text-align: center;
-}
 .map iframe{
     width:500px;
+    margin-top:10%;
     height:500px;
     border:4px solid rgba(228, 228, 228, 0.5);
     position:center;
