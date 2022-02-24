@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@1,100&display=swap');
+html {
+    scroll-behavior: smooth; }
 *{
     margin:0;
     padding:0;
@@ -10,15 +14,12 @@ body{
 section{
     margin:0;
     padding:0;
-
+    background-image:url("bg3.jpg");
 }
 .navigation{
     position:relative;
     width:100%;
     height:100vh;
-    background-image:url("bg3.jpg");
-    
-
 }
 
 nav{
@@ -186,7 +187,6 @@ nav ul li a:hover{
     width: 100%;
    }
 
-
 iframe{
 
     margin-left:12%;
@@ -209,6 +209,100 @@ iframe{
 {
     background:linear-gradient(transparent,rgb(255, 107, 132),yellow,rgb(0, 212, 240),transparent);
 }
-hr.line{
-    border:1px dotted white;
+hr{
+    border:1px dashed rgb(161, 161, 161,0.5);
+}
+.layout1{
+    display:flex;
+    width: 90%;
+    margin: auto;
+    padding-left: 2%;
+    padding-right:2%;
+    align-items:flex-start;
+    justify-content: space-between;
+    
+
+}
+.resume{
+    position:relative;
+    width:100%;
+    height:100vh;
+    background-image:url("bg3.jpg");
+}
+.page1{
+    margin-top:auto;
+    font-size: 25px;
+    color:#bae0ff;
+    text-align:center;
+    font-family: Overpass ital;
+    background:none;
+}
+.education{
+    position:relative;
+    margin-top:2%;
+    padding-top:0.5px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom:3%;
+    margin-right:5%;
+    width:auto;
+    height:80%;
+    box-shadow: 20px 20px 50px  rgba(0,0,0,0.5);
+    background:rgb(255, 255, 255,0.1);
+    border-radius:3%;
+    border-bottom:1px solid rgba(255,255,255,0.5);
+    border-right:1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(4px);
+    text-align: justify;
+}
+.title{
+    text-align: center;
+}
+.title span {
+    font-size:20px ;
+    margin-top:0%;
+    font-family:comic sans-serif;
+    color:white;
+    transition:0.4s
+    font-weight: bold;
+}
+.title span:hover{
+    color:rgb(255, 255, 8);
+}
+.college{
+    font-size: 20px;
+    font-style: bold;
+    font-family:'Times New Roman';
+    color: rgb(57, 199, 255);
+}
+.course{
+    font-size: 13px;
+    font-style: bold;
+    font-family: overpass thin;
+    color: rgb(147, 185, 200);
+}
+.studied ul li{
+    margin-left: 6%;
+    font-size: 14px;
+    font-family: 'Overpass', sans-serif;
+    color: rgb(251, 251, 251,0.8);
+
+}
+.education2{
+    position:relative;
+    margin-top:2%;
+    padding-top:0.5px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom:3%;
+    margin-right:0%;
+    width:57%;
+    height:80%;
+    box-shadow: 20px 20px 50px  rgba(0,0,0,0.5);
+    background:rgb(255, 255, 255,0.1);
+    border-radius:3%;
+    border-bottom:1px solid rgba(255,255,255,0.5);
+    border-right:1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(4px);
+    text-align: justify;
 }
