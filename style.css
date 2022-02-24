@@ -187,17 +187,6 @@ nav ul li a:hover{
     width: 100%;
    }
 
-iframe{
-
-    margin-left:12%;
-    border:6px solid rgb(122, 225, 243) 80%;
-    border-radius: 6px;
-    width:75%;
-    height:60vh;
-    background:rgb(0, 0, 0);
-
-
-}
 ::-webkit-scrollbar{
     width:5px;
 }
@@ -244,7 +233,7 @@ hr{
     padding-right: 2%;
     padding-bottom:3%;
     margin-right:5%;
-    width:auto;
+    width:57%;
     height:80%;
     box-shadow: 20px 20px 50px  rgba(0,0,0,0.5);
     background:rgb(255, 255, 255,0.1);
@@ -304,4 +293,80 @@ hr{
     border-right:1px solid rgba(255,255,255,0.5);
     backdrop-filter: blur(4px);
     text-align: justify;
+}
+.contacts{
+    margin:0;
+    padding:0;
+    height:100vh;
+}
+.layout3{
+    display:flex;
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    padding-left: 2%;
+    padding-top:7%;
+    padding-right:5%;
+    align-items:flex-start;
+    justify-content: space-between;  
+    background:rgb(0, 0, 0);
+}
+.contacts h1{
+    background:none;
+    font-size: 25px;
+    color:#bae0ff;
+    text-align:center;
+}
+.map h2{
+    align-top:0%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    color:white;
+    text-align: center;
+}
+.map iframe{
+    width:500px;
+    height:500px;
+    border:4px solid rgba(228, 228, 228, 0.5);
+    position:center;
+    border-radius: 6%;
+}
+form{
+    margin-left:auto;
+    margin-top:17%;
+    width:450px;
+    height:auto; 
+    padding:2%;
+    background:rgb(250, 250, 250,0.2);
+    border-radius:6%;
+    padding-left:5%;
+}
+.input-field{
+    width:400px;
+    height:40px;
+    margin-top:15px;
+    padding-left:10px;
+    padding-right:10px;
+    border:1px solid #777;
+    border-radius:14px;
+    outline:none;
+
+}
+.textarea-field{
+    height:150px;
+    padding-top :10px;
+
+}
+.btn {
+    border-radius:10px;
+    width:75px;
+    color:rgb(12, 12, 12);
+    margin-top:18px;
+    padding:13px;
+    background-color:#bcdee7;
+    cursor:pointer;
+    transition:0.4s
+}
+.btn:hover{
+    background-color:rgb(159, 255, 130);
 }
