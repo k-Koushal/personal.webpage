@@ -23,6 +23,11 @@ body{
     line-height: 50px;
     color:white;
 }
+.gotopbtn:hover{
+    background:white;
+    color:black;
+}
+}
 section{
     margin:0;
     padding:0;
