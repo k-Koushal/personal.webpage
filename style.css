@@ -15,13 +15,14 @@ body{
     position:fixed;
     width:50px;
     height:50px;
-    background:rgba(246, 244, 244, 0.5);
+    background:rgb(177, 224, 255);
     bottom:5px;
-    right:10px;
+    right:20px;
     text-decoration: none;
     text-align:center;
     line-height: 50px;
-    color:white;
+    color:rgb(32, 32, 0);
+    border-radius:50%;
 }
 .gotopbtn:hover{
     background:white;
@@ -208,7 +209,8 @@ nav ul li a:hover{
    }
 
 ::-webkit-scrollbar{
-    width:7px;
+    width:5px;
+    border-radius: 20%;
 }
 ::-webkit-scrollbar-thumb{
     background:linear-gradient(transparent,rgb(0, 212, 240),yellow,rgb(255, 107, 132),transparent);
@@ -272,7 +274,7 @@ hr{
     margin-top:0%;
     font-family:comic sans-serif;
     color:white;
-    transition:0.4s
+    transition:0.4s;
     font-weight: bold;
 }
 
@@ -344,7 +346,7 @@ hr{
 }
 .map iframe{
     width:500px;
-    margin-top:10%;
+    margin-top:12%;
     height:500px;
     border:4px solid rgba(228, 228, 228, 0.5);
     position:center;
@@ -360,9 +362,9 @@ hr{
 }
 form{
     margin-left:auto;
-    margin-top:10%;
+    margin-top:5%;
     width:450px;
-    height:auto; 
+    height:400px; 
     padding:2%;
     background:rgb(250, 250, 250,0.2);
     border-radius:6%;
@@ -387,15 +389,16 @@ form{
 .btn {
     border-radius:10px;
     width:75px;
-    color:rgb(12, 12, 12);
-    margin-top:18px;
+    color:rgb(251, 255, 0);
+    margin-top:5px;
     padding:13px;
-    background-color:#bcdee7;
+    background-color:#0062ff;
     cursor:pointer;
     transition:0.4s
 }
 .btn:hover{
-    background-color:rgb(159, 255, 130);
+    background-color:rgb(14, 58, 0);
+    color:white;
 }
  .hobbies{
     display:inline-block;
@@ -431,9 +434,9 @@ form{
 }
 
 .hob{
-    color:#fcff66;
+    color:#80c1ff;
     font-style:bold;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Verdana;
     font-size:20px;
 }
 .abt{
