@@ -221,7 +221,10 @@ nav ul li a:hover{
     background:linear-gradient(transparent,rgb(255, 107, 132),yellow,rgb(0, 212, 240),transparent);
 }
 hr{
-    border:1px solid white;
+    border:1px solid rgb(164, 237, 255);
+    margin-left:5%;
+    margin-right:5%;
+    margin-top:0.1%;
 }
 .layout1{
     display:flex;
