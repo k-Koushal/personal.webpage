@@ -11,6 +11,11 @@ html {
 body{
     background:black;
 }
+a{
+    text-decoration:none;
+    
+}
+
 .gotopbtn {
     position:fixed;
     width:50px;
