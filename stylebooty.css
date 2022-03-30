@@ -1,0 +1,281 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background: rgb(0, 0, 0, 0.9) !important;
+}
+
+#navbarcontainer {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+#logo {
+    width: 10rem !important;
+
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,.55);
+    border: none!important;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem;
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+        margin-right: 2rem;
+        align-items: center;
+    }
+}
+
+
+#home {
+    position: relative;
+    background: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.homebackground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url("https://i.ibb.co/985MDTS/gradienta-n2-Xq-Pm7-Bqhk-unsplash.jpg");
+    background-size: cover;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 650px) {
+    .homebackground {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://i.ibb.co/985MDTS/gradienta-n2-Xq-Pm7-Bqhk-unsplash.jpg") no-repeat;
+        background-size: cover;
+        opacity: 0.5;
+    }
+}
+
+#homerow {
+    width: 98%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    opacity: 75%;
+
+}
+
+#photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#hometext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+
+}
+
+/*Hometext content*/
+
+.details h1 {
+    color: rgb(255, 255, 255);
+    font-size: clamp(1rem, 3vw, 1.9rem);
+    margin-bottom: 10px;
+}
+
+.details p {
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    font-size: clamp(0.5rem, 3vw, 1rem);
+}
+
+.details span {
+    color: rgb(255, 255, 8);
+    font-weight: 600;
+
+}
+
+#resumebutton {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: clamp(0.2rem, 3vw, 0.6rem);
+    margin-bottom: 1rem;
+}
+
+
+
+.skills {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills h3 {
+    text-align: center;
+    margin-top: 0%;
+    color: rgb(255, 255, 255);
+    font-size: clamp(0.5rem, 3vw, 0.9rem);
+    margin-left: 1.5%;
+}
+
+.skillsicons {
+    position: relative;
+    display: inline;
+    width: 100%;
+    padding: 0 2%;
+}
+
+.skillsicons>img {
+    margin-bottom: 0.2%;
+    margin-right: 0.2%;
+    height: clamp(1rem, 3vw, 1.2rem);
+
+}
+
+.flipbox {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+    position: relative;
+    min-width: 80%;
+    height: auto;
+    margin-top: 4%;
+}
+
+
+
+
+/*Card animation*/
+.flip-box-front,
+.flip-box-back {
+    background: transparent;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    background-clip: padding-box;
+    border-radius: 1rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s cubic-bezier(.4, .4, .4, 1);
+    backface-visibility: hidden;
+}
+
+.flip-box-front {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+
+.flipbox:hover .flip-box-front {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+.flip-box-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+
+}
+
+.flipbox:hover .flip-box-back {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+
+/* End of Card Flip*/
+
+.pic {
+    position: relative;
+    width: 90%;
+    height: 70%;
+}
+
+.pic>img {
+
+    position: relative;
+    width: clamp(10rem, 23vw, 20rem);
+    height: auto;
+}
+
+.rotateicon {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rotateicon {
+    font-size: clamp(0.6rem, 1vw, 1rem);
+    color: white;
+    opacity: 50%;
+}
+
+.cardlogo {
+    position: relative;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardlogo>img {
+    position: relative;
+    width: clamp(4rem, 10vw, 8rem);
+    height: auto;
+}
+
+.cardlogo>span {
+    font-size: clamp(1rem, 2vw, 2.6rem);
+    color: yellow;
+    font-weight: 400;
+}
+
+.social {
+    width: 100%;
+}
+
+.social>a {
+    display: inline-flex;
+    padding: 3%;
+    justify-content: center;
+    align-items: center;
+    color: rgb(240, 251, 255);
+    font-size: clamp(1rem, 1.8vw, 2rem);
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.social>a:hover {
+    background: rgb(255, 242, 129);
+    color: rgb(1, 78, 122);
+}
