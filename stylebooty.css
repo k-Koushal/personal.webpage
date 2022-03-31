@@ -1,9 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    display: block;
+    background: black;
+}
+
 .navbar {
     background: rgb(0, 0, 0, 0.9) !important;
+    position: sticky !important;
+    top:0;
 }
 
 #navbarcontainer {
@@ -17,14 +28,16 @@
 }
 
 .navbar-dark .navbar-toggler {
-    color: rgba(255,255,255,.55);
-    border: none!important;
+    color: rgba(255, 255, 255, .55);
+    border: none !important;
 }
+
 .navbar-toggler:focus {
     text-decoration: none;
     outline: 0;
     box-shadow: 0 0 0 0.1rem;
 }
+
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
         display: flex !important;
@@ -51,34 +64,27 @@
     height: 100%;
     left: 0;
     top: 0;
-    background-image: url("https://i.ibb.co/985MDTS/gradienta-n2-Xq-Pm7-Bqhk-unsplash.jpg");
+    background: url(bg.jpg) no-repeat;
     background-size: cover;
-    opacity: 0.5;
+
+
+
+
 }
 
-@media screen and (max-width: 650px) {
-    .homebackground {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-image: url("https://i.ibb.co/985MDTS/gradienta-n2-Xq-Pm7-Bqhk-unsplash.jpg") no-repeat;
-        background-size: cover;
-        opacity: 0.5;
-    }
-}
 
 #homerow {
     width: 98%;
     margin-top: 2%;
     margin-bottom: 2%;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    background: rgba(255, 255, 255, 0.151);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     opacity: 75%;
+    z-index: 0;
 
 }
 
@@ -86,6 +92,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 
 }
 
@@ -94,6 +101,7 @@
     justify-content: center;
     align-items: center;
     padding: 5%;
+    z-index: 1;
 
 }
 
@@ -278,4 +286,112 @@
 .social>a:hover {
     background: rgb(255, 242, 129);
     color: rgb(1, 78, 122);
+}
+
+/*End of Home Page*/
+
+/*------------------------------------------------------------*/
+
+/* Project Page CSS Begins*/
+#Projects {
+    height: max-content;
+    position: relative;
+}
+
+#projectsPage {
+    position: relative;
+    margin-top: 1rem;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projectsRow {
+    position: relative;
+    width: 98%;
+    height: 90%;
+    margin-bottom: 2%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    opacity: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+#projectsTitle {
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px double rgba(255, 255, 255, 0.466);
+    height: max-content;
+    width: 80%;
+    position: relative;
+    padding: 1rem 0 0 0;
+
+}
+
+#projectsTitle>h2 {
+    color: rgb(255, 255, 0);
+    font-weight: 600;
+    font-size: clamp(1rem, 3vw, 1.7rem);
+    letter-spacing: 0.4rem!important;
+    
+
+}
+.projectsdiv{
+    margin-top: 1rem;
+    justify-content: space-evenly;
+}
+#project1,#project2{
+    border: 1px solid black;
+    padding: 1rem !important;
+    color:white;
+    border-radius: 0.5rem;
+}
+.projectimage{
+    position: relative;
+    width:100%;
+ 
+}
+#amazonpic{
+    background: black;
+    background-size: cover;
+    overflow: hidden;
+}
+#zomatopic{
+    background:black;
+    background-size: cover!important;
+    overflow: hidden;
+}
+.card-title{
+    font-size: clamp(0.9rem,4vw,1.5rem);
+    font-weight: 600;
+
+}
+.card-text{
+    color:rgba(255, 255, 255, 0.838);
+    font-size:clamp(0.5rem,2.5vw,1rem);
+    text-align: justify;
+
+}
+#livelinkbutton{
+    padding-top:0;
+
+    
+}
+#livelink{
+    font-size: clamp(0.2rem, 2vw, 0.9rem);
 }
