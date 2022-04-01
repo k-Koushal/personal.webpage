@@ -9,6 +9,7 @@ html {
 body {
     display: block;
     background: black;
+
 }
 
 .navbar {
@@ -38,7 +39,7 @@ body {
     box-shadow: 0 0 0 0.1rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
     .navbar-expand-lg .navbar-collapse {
         display: flex !important;
         flex-basis: auto;
@@ -66,6 +67,7 @@ body {
     top: 0;
     background: url(bg.jpg) no-repeat;
     background-size: cover;
+    opacity:40%;
 
 
 
@@ -78,13 +80,13 @@ body {
     margin-top: 2%;
     margin-bottom: 2%;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.151);
-    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(4px);
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba(107, 107, 107, 0.37);
+    backdrop-filter: blur(5px );
+    -webkit-backdrop-filter: blur( 1.5px );
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    opacity: 75%;
-    z-index: 0;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+ 
 
 }
 
@@ -93,6 +95,8 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1;
+    order:1;
+    padding-bottom: 10%;
 
 }
 
@@ -102,8 +106,19 @@ body {
     align-items: center;
     padding: 5%;
     z-index: 1;
+    order:0;
 
 }
+@media screen and (max-width:992px){
+    #photo{
+        order:0;
+        padding-bottom:0%!important;
+    }
+    #hometext {
+        order:1;
+    }
+}
+
 
 /*Hometext content*/
 
@@ -296,19 +311,18 @@ body {
 #Projects {
     height: max-content;
     position: relative;
+
+}
+#projectsbackground{
+    transform: rotateY(180deg);
+    transform: rotateX(180deg);
 }
 
 #projectsPage {
     position: relative;
-    margin-top: 1rem;
     width: 100%;
     height: 100%;
-    background: #000000;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #434343, #000000);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #434343, #000000);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
 
     display: flex;
     justify-content: center;
@@ -318,15 +332,15 @@ body {
 #projectsRow {
     position: relative;
     width: 98%;
-    height: 90%;
+    margin-top: 2%;
     margin-bottom: 2%;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba(107, 107, 107, 0.37);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 1.5px );
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    opacity: 75%;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     display: flex;
     flex-direction: column;
     align-items: center
