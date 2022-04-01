@@ -412,3 +412,9 @@ body {
 #livelink{
     font-size: clamp(0.2rem, 2vw, 0.9rem);
 }
+@media screen and (min-width:992px){
+    #livelinkbutton{
+        padding-top: 1% !important;
+    }
+}
+    
