@@ -62,7 +62,7 @@ body {
 
 }
 .nav-link:hover{
-    border-bottom: 1px solid rgba(170, 170, 170, 0.61);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.405);
 }
 
 @media screen and (max-width:576px) {
