@@ -13,12 +13,12 @@ body {
 }
 
 .navbar {
-    background: rgb(9,0,52);
-    background: linear-gradient(110deg, rgb(8, 0, 47) 0%, rgba(0,0,0,1) 100%);
-    position:sticky!important;
-    top: 0!important;
+    background: rgb(9, 0, 52);
+    background: linear-gradient(110deg, rgb(8, 0, 47) 0%, rgba(0, 0, 0, 1) 100%);
+    position: sticky !important;
+    top: 0 !important;
     color: white !important;
-    z-index:10!important;
+    z-index: 10 !important;
 }
 
 #navbarcontainer {
@@ -27,56 +27,64 @@ body {
     align-items: center;
 }
 
+
 .navbar-brand {
-   
-    width:12rem;
-    padding:auto;
-    display:flex;
+
+    width: 60%;
+    padding: auto;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0.3rem;
-    margin-left: 1%;
+    margin-left: 5%;
 }
 
 #logo {
     width: 90% !important;
-
-}
-
-.navbar-dark .navbar-toggler {
-    border: none !important;
-    background:transparent !important;
-    outline:0;
 }
 
 .navbar-toggler:focus {
     text-decoration: none;
     outline: 0;
-    box-shadow: 0 0 0.1rem white ;
+    box-shadow: 0 0 0.1rem white;
 }
-.navbar-nav{
-    width:60%;
-    justify-content:space-evenly;
-    align-items:center;
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.nav-link{
-    color:white !important ;
+
+.nav-link {
+    color: white !important;
+    font-size: clamp(0.7rem,1.5vw,2rem);
 
 }
-@media screen and (max-width:995px){
-    .navbar-nav{
-        width:auto;
-    }
+.nav-link:hover{
+    border-bottom: 1px solid rgba(170, 170, 170, 0.61);
 }
-@media (min-width: 991px) {
-    .navbar-expand-lg .navbar-collapse {
-        display: flex !important;
-        flex-basis: auto;
-        justify-content: flex-end;
-        margin-right: 2rem;
+
+@media screen and (max-width:576px) {
+    #navbar-brand-col{
+        display: flex;
+        justify-content:center;
+    }
+    .navbar-brand {
+
+        width: 40%;
+        padding: auto;
+        display: flex;
+        justify-content: center;
         align-items: center;
     }
+    .nav-link {
+        color: white !important;
+        font-size: clamp(0.6rem,3vw,1.3rem)!important;
+    
+    }
 }
+
 
 
 #home {
@@ -155,7 +163,7 @@ body {
 
 .details h1 {
     color: rgb(255, 255, 255);
-    font-size: clamp(1rem, 3vw, 1.9rem);
+    font-size: clamp(0.9rem, 4vw, 1.5rem);
     margin-bottom: 10px;
 }
 
@@ -167,9 +175,9 @@ body {
 
 .details span {
     color: rgb(255, 255, 8);
-    font-weight: 400;
+    font-weight: 500;
     font-family: 'GFS Didot', serif;
-    font-size: clamp(1.2rem, 4vw, 2rem);
+    font-size: clamp(1.2rem, 4vw, 2.2rem);
 
 }
 
@@ -312,9 +320,11 @@ body {
 }
 
 .cardlogo>span {
-    font-size: clamp(1rem, 2vw, 2.6rem);
+    font-size: clamp(1.1rem, 3vw, 2.6rem);
     color: yellow;
-    font-weight: 400;
+    font-weight: 500;
+    font-family: 'GFS Didot', serif;
+    margin-top: 0.6rem;
 }
 
 .social {
@@ -397,7 +407,7 @@ body {
     font-weight: 600;
     font-size: clamp(1rem, 3vw, 1.7rem);
     letter-spacing: 0.3rem !important;
-    font-family: 'GFS Didot', serif;
+    font-family: Helvetica, sans-serif;
 
 }
 
@@ -412,6 +422,10 @@ body {
     padding: 1rem !important;
     color: white;
     border-radius: 0.5rem;
+    background: rgba(0, 0, 0, 0.089);
+    box-shadow: rgba(0, 0, 0, 0.238) 0px 60px 40px -7px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: none !important;
 }
 
 .projectimage {
@@ -421,7 +435,6 @@ body {
 }
 
 #amazonpic {
-    background: black;
     background-size: cover;
     overflow: hidden;
 }
