@@ -63,6 +63,11 @@ body {
     color:white !important ;
 
 }
+@media screen and (max-width:750px){
+    .navbar-nav{
+        width:auto;
+    }
+}
 @media (min-width: 991px) {
     .navbar-expand-lg .navbar-collapse {
         display: flex !important;
@@ -285,7 +290,7 @@ body {
 .rotateicon {
     font-size: clamp(0.6rem, 1vw, 1rem);
     color: white;
-    opacity: 50%;
+    opacity: 100%;
 }
 
 .cardlogo {
