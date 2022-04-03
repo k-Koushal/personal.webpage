@@ -14,7 +14,7 @@ body {
 
 .navbar {
     background: rgb(9, 0, 52);
-    background: linear-gradient(110deg, rgb(8, 0, 47) 0%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(304deg, rgb(3 24 49 / 95%) 0%, rgb(1 8 18) 80%);
     position: sticky !important;
     top: 0 !important;
     color: white !important;
@@ -117,13 +117,12 @@ body {
     margin-top: 2%;
     margin-bottom: 2%;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(107, 107, 107, 0.37);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(1.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.287);
 
 }
 
@@ -234,8 +233,8 @@ body {
 /*Card animation*/
 .flip-box-front,
 .flip-box-back {
-    background: transparent;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: rgba(156, 210, 252, 0.05) 0px 60px 40px -7px;
     background-clip: padding-box;
     border-radius: 1rem;
     position: relative;
@@ -320,7 +319,7 @@ body {
 }
 
 .cardlogo>span {
-    font-size: clamp(1.1rem, 3vw, 2.6rem);
+    font-size: clamp(1.1rem, 2.5vw, 2.5rem);
     color: yellow;
     font-weight: 500;
     font-family: 'GFS Didot', serif;
@@ -380,12 +379,13 @@ body {
     margin-top: 2%;
     margin-bottom: 2%;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(107, 107, 107, 0.37);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(1.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 15px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
     display: flex;
     flex-direction: column;
     align-items: center
@@ -422,7 +422,7 @@ body {
     padding: 1rem !important;
     color: white;
     border-radius: 0.5rem;
-    background: rgba(0, 0, 0, 0.089);
+    background: rgba(255, 255, 255, 0.089);
     box-shadow: rgba(0, 0, 0, 0.238) 0px 60px 40px -7px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-top: none !important;
