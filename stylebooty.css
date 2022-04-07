@@ -332,12 +332,12 @@ body {
 }
 
 .social {
-    width: 100%;
+    width: 80%;
 }
 
 .social>a {
     display: inline-flex;
-    padding: 3%;
+    padding: 1.5%;
     justify-content: center;
     align-items: center;
     color: rgb(240, 251, 255);
@@ -562,7 +562,7 @@ body {
     padding-top: 1rem;
     margin-bottom: 2rem;
     width: 90%;
-    position:relative;
+    position: relative;
 }
 
 .resume-title {
@@ -573,6 +573,8 @@ body {
     border-bottom: 2px solid rgba(255, 255, 255, 0.18);
     margin: 1% 5% 2% 5%;
     padding-bottom: 1%;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
 
 }
@@ -592,7 +594,7 @@ body {
 
 .work-title {
     position: relative;
-    font-size: clamp(0.8rem, 3vw, 1.2rem);
+    font-size: clamp(0.7rem, 3vw, 1rem);
     font-weight: 600;
     margin-top: -1.8rem;
     margin-left: 0.5rem;
@@ -605,10 +607,10 @@ body {
 
 .graduation-icon {
     margin-right: 2rem;
-    margin-left: -1.65rem;
+    margin-left: -1.69rem;
     margin-bottom: -1rem;
     font-size: clamp(0.9rem, 4vw, 1.3rem);
-    color: #95D1CC;
+    color: #d4c8fb;
 }
 
 .workex-icon {
@@ -616,7 +618,7 @@ body {
     margin-left: -1.65rem;
     margin-bottom: -1rem;
     font-size: clamp(0.9rem, 4vw, 1.3rem);
-    color: #95D1CC;
+    color: #d4c8fb;
 }
 
 .course {
@@ -631,10 +633,150 @@ body {
     margin-bottom: 2rem;
     margin-left: -0.5rem;
 }
-.div-end{
-    color:rgba(255, 255, 255, 0.18);
-    position:absolute;
-    bottom:-0.5rem;
-    left:-1.4rem;
-    
+
+.div-end {
+    color: rgba(255, 255, 255, 0.18);
+    position: absolute;
+    bottom: -0.5rem;
+    left: -0.4rem;
+
+}
+
+/* Contacts Page*/
+#contactme {
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.contact_form {
+    padding: 1rem 2rem;
+    color: rgba(255, 255, 255, 0.752);
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 2%;
+}
+
+iframe {
+    border-radius: inherit;
+    opacity: 90%;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width:992px) {
+    iframe {
+        height: 300px;
+    }
+}
+
+.contactdetails {
+    font-size: clamp(0.3rem, 3vw, 0.9rem);
+}
+
+.contactform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field {
+    width: 90%;
+    height: 2.4rem;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 0.3rem;
+    outline: none;
+    position: relative;
+    font-size: clamp(0.3rem, 3vw, 0.9rem);
+}
+
+.textarea-field {
+    height: 150px;
+    padding-top: 10px;
+    font-size: clamp(0.3rem, 3vw, 0.9rem);
+
+}
+
+/* FOOTER*/
+footer {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.173);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-top: 1px solid rgba(255, 255, 255, 0.287);
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #131A22;
+}
+
+.copy {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #ffc107;
+    font-size: clamp(0.1rem, 3vw, 0.8rem);
+}
+
+.footercontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: clamp(0.1rem, 3vw, 0.8rem);
+
+}
+
+.footercontent>span:nth-child(2) {
+    position: relative;
+    color: #ffc107;
+    font-size: clamp(0.1rem, 3vw, 0.8rem);
+    text-align: center;
+}
+
+.footercontent>span>b,
+u {
+    color: #c2d7ff;
+    font-size: clamp(0.1rem, 3vw, 0.8rem);
+    font-weight: 600;
+}
+
+#footersocial {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40% !important;
+    ;
+    margin-bottom: 15px;
+    text-decoration: none !important;
+
+}
+
+#footersocial>a>i {
+
+    font-size: clamp(0.4rem, 2vw, 1.2rem);
+}
+
+#footersocial>a {
+    text-decoration: none !important;
+    margin-left: 1rem;
 }
