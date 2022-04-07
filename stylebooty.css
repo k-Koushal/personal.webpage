@@ -58,18 +58,20 @@ body {
 
 .nav-link {
     color: white !important;
-    font-size: clamp(0.7rem,1.5vw,2rem);
+    font-size: clamp(0.7rem, 1.5vw, 2rem);
 
 }
-.nav-link:hover{
+
+.nav-link:hover {
     border-bottom: 1px solid rgba(255, 255, 255, 0.405);
 }
 
 @media screen and (max-width:576px) {
-    #navbar-brand-col{
+    #navbar-brand-col {
         display: flex;
-        justify-content:center;
+        justify-content: center;
     }
+
     .navbar-brand {
 
         width: 40%;
@@ -78,10 +80,11 @@ body {
         justify-content: center;
         align-items: center;
     }
+
     .nav-link {
         color: white !important;
-        font-size: clamp(0.6rem,3vw,1.3rem)!important;
-    
+        font-size: clamp(0.6rem, 3vw, 1.3rem) !important;
+
     }
 }
 
@@ -120,9 +123,9 @@ body {
     margin-bottom: 2%;
     z-index: 1;
     background: rgba(0, 0, 0, 0.173);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 7px );
-    -webkit-backdrop-filter: blur( 7px );
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.287);
 
@@ -380,11 +383,11 @@ body {
     margin-bottom: 2%;
     z-index: 1;
     background: rgba(0, 0, 0, 0.1);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 7px );
-    -webkit-backdrop-filter: blur( 7px );
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
     border-radius: 15px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
     display: flex;
     flex-direction: column;
     align-items: center
@@ -402,10 +405,10 @@ body {
 }
 
 #projectsTitle>h2 {
-    background: linear-gradient(354deg, rgba(201,214,223,1) 0%, rgba(240,245,249,1) 100%);
+    background: linear-gradient(354deg, rgba(201, 214, 223, 1) 0%, rgba(240, 245, 249, 1) 100%);
     background-clip: text;
     -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
     font-weight: 600;
     font-size: clamp(1rem, 3vw, 1.7rem);
     letter-spacing: 0.3rem !important;
@@ -475,36 +478,40 @@ body {
         padding-top: 1% !important;
     }
 }
+
 /* RESUME PAGE CSS*/
-#Resume{
+#Resume {
     height: max-content;
     position: relative;
 }
-#pagecontainer{
+
+#pagecontainer {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#pageRow{
+
+#pageRow {
     position: relative;
     width: 100%;
     margin-top: 2%;
     margin-bottom: 2%;
     z-index: 1;
     background: rgba(0, 0, 0, 0.1);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 7px );
-    -webkit-backdrop-filter: blur( 7px );
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
     border-radius: 15px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center
 }
-#pageTitle{
+
+#pageTitle {
     display: flex;
     justify-content: center;
     border-bottom: 3px double rgba(255, 255, 255, 0.466);
@@ -513,55 +520,64 @@ body {
     position: relative;
     padding: 1rem 0 0 0;
 }
+
 #pageTitle>h2 {
-    background: linear-gradient(354deg, rgba(201,214,223,1) 0%, rgba(240,245,249,1) 100%);
+    background: linear-gradient(354deg, rgba(201, 214, 223, 1) 0%, rgba(240, 245, 249, 1) 100%);
     background-clip: text;
     -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
     font-weight: 600;
     font-size: clamp(1rem, 3vw, 1.7rem);
     letter-spacing: 0.3rem !important;
     font-family: Helvetica, sans-serif;
 
 }
-.Pagediv{
+
+.Pagediv {
     margin-top: 1rem;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
 }
-#education,#experience{
+
+#education,
+#experience {
     border: 1px solid black;
-    padding:1rem 1rem 1rem 2rem !important;
+    padding: 1rem 1rem 1rem 2rem !important;
     color: white;
     border-radius: 0.5rem;
     background: rgba(255, 255, 255, 0.089);
     box-shadow: rgba(0, 0, 0, 0.238) 0px 60px 40px -7px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-top: none !important;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items:center;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-bottom: 2rem;
 }
-.education{
+
+.education {
     border-left: 2px solid rgba(255, 255, 255, 0.18);
-    padding:0 1rem;
+    padding: 0 1rem;
     padding-top: 1rem;
-    padding-top: 1rem;
+    margin-bottom: 2rem;
+    width: 90%;
 }
-.resume-title{
+
+.resume-title {
     font-weight: 600;
     font-size: clamp(0.6rem, 3vw, 1.2rem);
-    text-align: center;
-    color:rgb(255, 255, 0);
-    border-bottom:1px dotted white;
-    margin:1% 5% 5% 5%;
+    align-self: start;
+    color: rgb(255, 255, 0);
+    border-bottom: 1px dotted white;
+    margin: 1% 5% 2% 5%;
     padding-bottom: 1%;
-   
- 
+
+
 }
-.college{
-    position:relative;
+
+.college {
+    position: relative;
     font-size: clamp(0.7rem, 3vw, 1rem);
     font-weight: 600;
     margin-top: -1.8rem;
@@ -569,9 +585,12 @@ body {
     text-align: left;
     text-overflow: ellipsis;
     letter-spacing: 1px;
+    color: #95D1CC;
+    text-shadow: 0 0 6px rgb(0, 0, 0);
 }
-.work-title{
-    position:relative;
+
+.work-title {
+    position: relative;
     font-size: clamp(0.8rem, 3vw, 1.2rem);
     font-weight: 600;
     margin-top: -1.8rem;
@@ -579,28 +598,34 @@ body {
     text-align: left;
     text-overflow: ellipsis;
     letter-spacing: 1px;
+    color: #95D1CC;
+    text-shadow: 0 0 6px rgb(0, 0, 0);
 }
-.graduation-icon{
+
+.graduation-icon {
     margin-right: 2rem;
     margin-left: -1.9rem;
     margin-bottom: -1rem;
     font-size: clamp(0.9rem, 4vw, 1.3rem);
-    color:#95D1CC;
+    color: #95D1CC;
 }
-.workex-icon{
+
+.workex-icon {
     margin-right: 2rem;
-    margin-left: -1.6rem;
+    margin-left: -1.7rem;
     margin-bottom: -1rem;
     font-size: clamp(0.9rem, 4vw, 1.3rem);
-    color:#95D1CC;
+    color: #95D1CC;
 }
-.course{
+
+.course {
     font-size: clamp(0.3rem, 3vw, 0.9rem);
     font-weight: 400;
-    color:rgba(255, 242, 0, 0.621);
+    color: rgba(245, 253, 0, 0.696);
     font-style: italic
 }
-.studied{
+
+.studied {
     font-size: clamp(0.3rem, 3vw, 0.9rem);
     margin-bottom: 2rem;
 }
