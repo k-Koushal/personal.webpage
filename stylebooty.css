@@ -14,11 +14,12 @@ body {
 
 .navbar {
     background: rgb(9, 0, 52);
-    background: linear-gradient(304deg, rgb(3 24 49 / 95%) 0%, rgb(1 8 18) 80%);
+    background: linear-gradient(304deg, rgb(102 95 107) 0%, rgb(31 54 76) 80%);
     position: sticky !important;
     top: 0 !important;
     color: white !important;
     z-index: 10 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.33);
 }
 
 #navbarcontainer {
@@ -122,8 +123,8 @@ body {
     margin-top: 2%;
     margin-bottom: 2%;
     z-index: 1;
-    background: rgba(0, 0, 0, 0.173);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    background: rgba(255, 255, 255, 0.139);
+    box-shadow: 0 8px 40px 0 rgba(76, 167, 237, 0.17);
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
     border-radius: 15px;
@@ -382,7 +383,7 @@ body {
     margin-top: 2%;
     margin-bottom: 2%;
     z-index: 1;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
@@ -427,8 +428,8 @@ body {
     padding: 1rem !important;
     color: white;
     border-radius: 0.5rem;
-    background: rgba(255, 255, 255, 0.089);
-    box-shadow: rgba(0, 0, 0, 0.238) 0px 60px 40px -7px;
+    background: rgba(0, 0, 0, 0.403);
+    box-shadow: rgba(0, 0, 0, 0.132) 0px 60px 40px -7px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-top: none !important;
 }
@@ -436,6 +437,9 @@ body {
 .projectimage {
     position: relative;
     width: 100%;
+    border-radius: inherit;
+    border:1px solid rgba(255, 255, 255, 0.342);
+
 
 }
 
@@ -499,7 +503,7 @@ body {
     margin-top: 2%;
     margin-bottom: 2%;
     z-index: 1;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
@@ -514,7 +518,7 @@ body {
 #pageTitle {
     display: flex;
     justify-content: center;
-    border-bottom: 3px double rgba(255, 255, 255, 0.466);
+    border-bottom: 3px double rgba(255, 255, 255, 0.605);
     height: max-content;
     width: 80%;
     position: relative;
@@ -545,8 +549,8 @@ body {
     padding: 1rem 1rem 1rem 2rem !important;
     color: white;
     border-radius: 0.5rem;
-    background: rgba(255, 255, 255, 0.089);
-    box-shadow: rgba(0, 0, 0, 0.238) 0px 60px 40px -7px;
+    background: rgba(0, 0, 0, 0.05);
+    box-shadow: rgba(0, 0, 0, 0.061) 0px 60px 40px -7px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-top: none !important;
     display: flex;
@@ -557,7 +561,7 @@ body {
 }
 
 .education {
-    border-left: 2px solid rgba(255, 255, 255, 0.18);
+    border-left: 2px solid rgba(255, 255, 255, 0.53);
     padding: 0 1rem;
     padding-top: 1rem;
     margin-bottom: 2rem;
@@ -570,7 +574,7 @@ body {
     font-size: clamp(0.6rem, 3vw, 1.2rem);
     align-self: start;
     color: rgb(255, 255, 0);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.18);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.53);
     margin: 1% 5% 2% 5%;
     padding-bottom: 1%;
     padding-left: 2rem;
@@ -588,8 +592,8 @@ body {
     text-align: left;
     text-overflow: ellipsis;
     letter-spacing: 1px;
-    color: #95D1CC;
-    text-shadow: 0 0 6px rgb(0, 0, 0);
+    color: rgb(188, 223, 255);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.386);
 }
 
 .work-title {
@@ -601,8 +605,8 @@ body {
     text-align: left;
     text-overflow: ellipsis;
     letter-spacing: 1px;
-    color: #95D1CC;
-    text-shadow: 0 0 6px rgb(0, 0, 0);
+   color: rgb(188, 223, 255);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.386);
 }
 
 .graduation-icon {
@@ -623,19 +627,21 @@ body {
 
 .course {
     font-size: clamp(0.3rem, 3vw, 0.9rem);
-    font-weight: 400;
-    color: rgba(245, 253, 0, 0.696);
-    font-style: italic
+    font-weight: 500;
+    color: #e7e0ff;
+    font-style: italic;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.718);
 }
 
 .studied {
     font-size: clamp(0.3rem, 3vw, 0.9rem);
     margin-bottom: 2rem;
     margin-left: -0.5rem;
+    color:rgba(255, 255, 255, 0.861)
 }
 
 .div-end {
-    color: rgba(255, 255, 255, 0.18);
+    color: rgba(255, 255, 255, 0.53);
     position: absolute;
     bottom: -0.5rem;
     left: -0.4rem;
@@ -654,7 +660,7 @@ body {
 }
 
 .card {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.403);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
